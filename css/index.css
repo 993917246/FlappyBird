@@ -1,0 +1,153 @@
+
+#flaybird {
+	position: relative;
+	background-image: url(../img/sky.png);
+	width: 100%;
+	height:600px;
+	background-position-x: 0;
+	overflow: hidden;
+}
+
+.bird{
+	position: absolute;
+	background-image: url(../img/birds.png);
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	top: 235px;
+	margin-left: -15px;
+	transition: top .3s linear;
+}
+
+.start {
+	position: absolute;
+	font-weight: bolder;
+	top: 295px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	transition: all .3s linear;		/* 设置补间动画 : 元素属性   时间  方式 */
+}
+
+.start.start-white{
+	color: #fff;
+	font-size: 24px;
+	
+}
+
+.start.start-blue{
+	color: #09f;
+	font-size: 36px;
+	
+}
+
+.fengshu{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+	display: none;
+	z-index:3;
+}
+
+.mask{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	opacity: .7;
+	display: none;
+	z-index: 1;
+}
+
+.end{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 70px;
+	text-align: center;
+	display: none;
+	z-index: 3;
+}
+
+.end .over {
+	font-size: 36px;
+	font-weight: bolder;
+	color: red;
+}
+
+.end .result,
+.end .final-score{
+	font-size: 20px;
+	color: yellow;
+	font-weight: border;
+	margin-top: 25px;
+}
+
+
+
+.end .rank-list {
+	color: #0099FF;
+	margin-top: 20px;
+	
+}
+
+.end .rank-item {
+	margin-top: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.end .rank-score {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.end .rank-degree {
+	display: inline-block;
+	line-height: 16px;
+	width: 18px;
+	height: 18px;
+	
+}
+.end .diyi {
+	background-color: red;
+}
+
+.end .dier {
+	background-color: #FFFF00;
+}
+
+.end .disan {
+	background-color: aqua;
+}
+
+.end .restart {
+	color: #0099FF;
+	font-size: 20px;
+	font-weight: bolder;
+	margin-top: 15px;
+}
+
+.pipe {
+	position: absolute;
+	width: 52px;
+
+
+}
+.pipe.pipe-up {
+	top: 0;
+	background-image: url(../img/pipe2.png);
+	background-position-y: bottom ;
+}
+
+.pipe.pipe-down {
+	background-image: url(../img/pipe1.png);
+	bottom: 0;
+}
